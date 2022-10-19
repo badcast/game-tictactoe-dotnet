@@ -1,0 +1,49 @@
+[lngs_cnfg]
+lnglocale 		= en
+lngname 		= English
+lngVersion 		= 1.0
+lngAuthor 		= Farbox Games
+
+[words]
+$(name)			= Name
+$(age) 			= Age
+$(goback) 		= Go back
+$(main_menu) 	= Main menu
+$(play_game) 	= Play game
+$(options) 		= Options
+$(about_us) 	= About us
+$(quit) 		= Quit
+$(version)		= version
+$(single_player = Single player 
+$(map_size) 	= Map size
+$(battle_vs) 	= Battle vs
+$(me_play_for)  = We player select
+$(level) 		= Level
+$(low) 			= Low
+$(middle) 		= Middle
+$(hard) 		= Hard
+$(very_hard) 	= Very Hard
+$(start) 		= Start
+$(tic) 			= Tic
+$(tac) 			= Tac
+$(toe) 			= Toe
+$(player)		= Player
+$(ai)			= AI
+$(loading)		= Loading
+$(reset)		= Reset
+$(return_to_mainmenu)= Return Main menu
+$(time)			= Time
+$(step)			= Step
+$(return)		= Return
+$(project_created)= Project created
+$(sound_volume) = Sound volume
+$(music_volume) = Music volume
+$(save)			= Save
+$(load)			= Load
+$(empty)		= Empty
+$(downloading) 	= Downloading
+$(dowbload)		= Downloading
+$(speed)		= Speed
+[special]
+$(children) 	= Children
+$(family)		= Family

@@ -1,0 +1,12 @@
+<!--Элемент управления ползунок-->
+<design>
+	<source src="trackbar.png"/>
+	<rects>
+		<trakLine rect="0, 25, 200, 25"/>
+		<trackLeftArrow rect="87,0,25,25"/>
+		<trackRightArrow rect="112,0,25,25"/>
+	</rects>
+	<TripleButtons>
+		<triple key="trakIndikator" rect="0,0,29,25" direction="Right"/>
+	</TripleButtons>
+</design>

@@ -1,0 +1,28 @@
+﻿<Button x:Class="CAZ.GridObject"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:CAZ"
+             mc:Ignorable="d" 
+             Width="100" Height="100" Tag="cellButton" VerticalContentAlignment="Stretch" HorizontalContentAlignment="Stretch"
+             MouseMove="Button_MouseMove" MouseEnter="UserControl_MouseEnter" IsEnabledChanged="Button_IsEnabledChanged"  MouseLeave="UserControl_MouseLeave"
+             PreviewMouseLeftButtonDown="UserControl_MouseDown" PreviewMouseUp="Button_PreviewMouseUp" Click="Button_Click">
+    <Grid>
+        <Image x:Name="gridImage" Margin="10"/>
+    </Grid>
+
+    <!--<VisualStateManager.VisualStateGroups>
+        <VisualStateGroup>
+            <VisualStateGroup.Transitions>
+                <VisualTransition GeneratedDuration="0:0:0:.5"/>
+                <VisualTransition GeneratedDuration="0" To="Pressed"/>
+            </VisualStateGroup.Transitions>
+            <VisualState Name="MouseOver">
+                    <Storyboard>
+                        <DoubleAnimationUsingKeyFrames Storyboard.TargetName="gridImage" Storyboard.TargetProperty="Opacity" Duration="0:0:0:1" />
+                    </Storyboard>
+            </VisualState>
+        </VisualStateGroup>
+    </VisualStateManager.VisualStateGroups>-->
+</Button>

@@ -1,0 +1,10 @@
+<!--Элемент управления прогресс-->
+<design>
+	<source src="Level_box.png"/>
+	<rects>
+	</rects>
+	<TripleButtons>
+		<triple key="LevelBoxButton" rect="0, 0, 50, 50" direction="Down"/>
+		<triple key="LevelBoxButtonLocked" rect="50, 0, 50, 50" direction="Down"/>
+	</TripleButtons>
+</design>

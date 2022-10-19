@@ -1,0 +1,247 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A2B9DA69-8783-4B1D-A548-5E8C9C08AB07}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>CAZ</RootNamespace>
+    <AssemblyName>game</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>Build\Debug\</OutputPath>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Optimize>false</Optimize>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="Objects\LevelButton.xaml.cs">
+      <DependentUpon>LevelButton.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Objects\LevelBox.xaml.cs">
+      <DependentUpon>LevelBox.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Objects\DraftLine.xaml.cs">
+      <DependentUpon>DraftLine.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\INI\Exceptions\ParsingException.cs" />
+    <Compile Include="Modules\INI\FileIniParser.cs" />
+    <Compile Include="Modules\INI\Helpers\Assert.cs" />
+    <Compile Include="Modules\INI\Model\Configuration\ConcatenateDuplicatedKeysIniParserConfiguration.cs" />
+    <Compile Include="Modules\INI\Model\Configuration\IniParserConfiguration.cs" />
+    <Compile Include="Modules\INI\Model\Formatting\DefaultIniDataFormatter.cs" />
+    <Compile Include="Modules\INI\Model\Formatting\IIniDataFormatter.cs" />
+    <Compile Include="Modules\INI\Model\IniData.cs" />
+    <Compile Include="Modules\INI\Model\IniDataCaseInsensitive.cs" />
+    <Compile Include="Modules\INI\Model\KeyData.cs" />
+    <Compile Include="Modules\INI\Model\KeyDataCollection.cs" />
+    <Compile Include="Modules\INI\Model\SectionData.cs" />
+    <Compile Include="Modules\INI\Model\SectionDataCollection.cs" />
+    <Compile Include="Modules\INI\Parser\ConcatenateDuplicatedKeysIniDataParser.cs" />
+    <Compile Include="Modules\INI\Parser\IniDataParser.cs" />
+    <Compile Include="Modules\INI\StreamIniDataParser.cs" />
+    <Compile Include="Modules\INI\StringIniParser.cs" />
+    <Compile Include="Objects\ProgressBarStyle.xaml.cs">
+      <DependentUpon>ProgressBarStyle.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Scripts\Audio.cs" />
+    <Compile Include="Scripts\GameCreative.cs" />
+    <Compile Include="Scripts\AsyncOperation.cs" />
+    <Compile Include="Scripts\CommonTools.cs" />
+    <Compile Include="Scripts\Configs.cs" />
+    <Compile Include="Scripts\DataBase.cs" />
+    <Compile Include="Scripts\DesignManager.cs" />
+    <Compile Include="Scripts\GameEngine.cs" />
+    <Compile Include="Scripts\GameValues.cs" />
+    <Compile Include="Scripts\Interfaces.cs" />
+    <Compile Include="Scripts\Level.cs" />
+    <Compile Include="Scripts\Packer.cs" />
+    <Compile Include="Scripts\Players.cs" />
+    <Compile Include="Scripts\Profiles.cs" />
+    <Compile Include="Scripts\SkinManager.cs" />
+    <Compile Include="Scripts\WindowManager.cs" />
+    <Compile Include="Objects\GridManager.xaml.cs">
+      <DependentUpon>GridManager.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Objects\GridObject.xaml.cs">
+      <DependentUpon>GridObject.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Objects\ProgressBarH.xaml.cs">
+      <DependentUpon>ProgressBarH.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Objects\TrackBarH.xaml.cs">
+      <DependentUpon>TrackBarH.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Objects\TripleButton.xaml.cs">
+      <DependentUpon>TripleButton.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\AboutScreen.xaml.cs">
+      <DependentUpon>AboutScreen.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\GameScreen.xaml.cs">
+      <DependentUpon>GameScreen.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\LoaderScreen.xaml.cs">
+      <DependentUpon>LoaderScreen.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\LogoScreen.xaml.cs">
+      <DependentUpon>LogoScreen.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\MainMenuScreen.xaml.cs">
+      <DependentUpon>MainMenuScreen.xaml</DependentUpon>
+    </Compile>
+    <Content Include="TicTacToeMinimax.js" />
+    <Page Include="Objects\LevelButton.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Objects\LevelBox.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Objects\DraftLine.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="Objects\GridObject.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Objects\GridManager.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Objects\ProgressBarH.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Objects\ProgressBarStyle.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Objects\TrackBarH.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Objects\TripleButton.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Screens\AboutScreen.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Screens\GameScreen.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Screens\LoaderScreen.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Screens\LogoScreen.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Screens\MainMenuScreen.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Modules\INI\Model\IniData.cs.rej" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Null.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

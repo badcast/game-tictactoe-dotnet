@@ -1,0 +1,21 @@
+<design>
+    <!--From data\bitmaps-->
+	<source src="interface.png"/>
+	<!--MENU_INTERFACE-->
+	<load src="menu_01.shm"/>
+	<load src="trackbar.shm"/>
+	<load src="progressbar.shm"/>
+	<load src="game.shm"/>
+	<load src="cell.shm"/>
+	<load src="window.shm"/>
+	<load src="menu_levelBox.shm"/>
+	<rects>
+		<cursor src="cursor.png"/>
+		<logo src="logos\farbox_logo.png"/>
+	</rects>
+	<TripleButtons>
+
+		<triple key="button" rect="0, 0, 250, 50" direction="Down"/>
+		<triple key="czgrid" rect="250, 0, 150, 150" direction="Right"/>
+    </TripleButtons>
+</design>

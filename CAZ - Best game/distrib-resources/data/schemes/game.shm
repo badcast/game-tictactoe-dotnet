@@ -1,0 +1,23 @@
+<!--Схема игры-->
+<!--Подключается game.ini файл-->
+<design config="game">	
+	
+	<rects>
+		<gameTypePlayer1 src="game\game_type_1.png"/>
+		<gameTypePlayer2 src="game\game_type_2.png"/>
+		<gameDraft src="game\draft.png"/>
+		<gameIcon01 src="game\Cross-2.png"/>
+		<gameIcon02 src="game\Cross-3.png"/>
+		<gameIcon03 src="game\Cross-4.png"/>
+		<gameIcon04 src="game\Cross-5.png"/>
+		<gameIcon05 src="game\Cross-6.png"/>
+		<gameIcon06 src="game\Cross-NeonStyle1.png"/>
+		<gameIcon07 src="game\Zeros-NeonStyle1.png"/>
+		<gameIcon08 src="game\game_type_1_.png"/>
+		<gameIcon09 src="game\game_keiron.png"/>
+		<wheel src="wheel_new.png"/>
+		<clock src="clock.png"/>
+		<star_enabled src="star.png" rect="0, 0, 50, 50"/>
+		<star_disabled src="star.png" rect="0, 50, 50, 50"/>
+	</rects>
+</design>

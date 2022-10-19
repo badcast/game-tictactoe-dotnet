@@ -1,0 +1,16 @@
+﻿<UserControl x:Class="CAZ.TrackBarH"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:CAZ"
+             mc:Ignorable="d" 
+             d:DesignHeight="30" d:DesignWidth="200" MaxHeight="30" Loaded="UserControl_Loaded">
+    <Grid>
+        <Border x:Name="bg" Margin="30,0" Background="DarkGray" PreviewMouseUp="UserControl_PreviewMouseUp" MouseUp="UserControl_PreviewMouseUp" PreviewMouseMove="UserControl_PreviewMouseMove" PreviewMouseDown="UserControl_PreviewMouseDown" >
+            <local:TripleButton x:Name="trkInd" Width="30" Height="30" Tag="trakIndikator" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+        </Border>
+        <Image x:Name="leftA" Width="30" Height="30" HorizontalAlignment="Left"/>
+        <Image x:Name="rightA" Width="30" Height="30" HorizontalAlignment="Right"/>
+    </Grid>
+</UserControl>

@@ -1,0 +1,17 @@
+<level>
+	<level_name>Begginer</level_name>
+	<level_id>0</level_id>
+	<!--set to 0 = none prize-->
+	<level_prize>1</level_prize>
+	<level_raiting>5</level_raiting>
+	<level_size>3</level_size>
+	<!--Difficulty bot levels: 
+								idiot = 1, 
+								normal = 2, 
+								middle = 3, 
+								hard = 4, 
+								very hard = 5
+	-->
+	<level_botDifficulty>1</level_botDifficulty>
+	<level_score>100</level_score>
+</level>

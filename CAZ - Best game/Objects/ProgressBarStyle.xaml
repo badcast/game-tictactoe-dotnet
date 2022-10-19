@@ -1,0 +1,21 @@
+﻿<UserControl x:Class="CAZ.ProgressBarStyle"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:CAZ"
+             mc:Ignorable="d" d:DesignWidth="300" Foreground="White" BorderBrush="Black" BorderThickness="1" Height="300">
+
+    <Grid>
+        <Grid x:Name="animator" RenderTransformOrigin=".5, .5">
+            <Grid.RenderTransform>
+                <TransformGroup>
+                    <RotateTransform Angle="0"></RotateTransform>
+                </TransformGroup>
+            </Grid.RenderTransform>
+            <Grid.Background>
+                <ImageBrush ImageSource="/game;component/Resources/Null.png" Stretch="UniformToFill"></ImageBrush>
+            </Grid.Background>
+        </Grid>
+    </Grid>
+</UserControl>

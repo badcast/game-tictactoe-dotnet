@@ -1,0 +1,7 @@
+﻿<Button x:Class="CAZ.TripleButton"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:CAZ" OverridesDefaultStyle="true"
+             mc:Ignorable="d" d:DesignWidth="150" MouseEnter="UserControl_MouseEnter" Background="DarkCyan" MouseLeave="UserControl_MouseLeave" d:DesignHeight="60" PreviewMouseLeftButtonDown="UserControl_MouseDown" PreviewMouseUp="Button_PreviewMouseUp" Initialized="Button_Initialized" Loaded="Button_Loaded" MouseUp="Button_MouseUp"/>

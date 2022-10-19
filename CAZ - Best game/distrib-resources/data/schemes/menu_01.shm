@@ -1,0 +1,9 @@
+<!--Элемент управления прогресс-->
+<design>
+	<source src="menu_buttons.png"/>
+	<rects>
+	</rects>
+	<TripleButtons>
+		<triple key="menuButton" rect="0, 0, 380, 130" direction="Down"/>
+	</TripleButtons>
+</design>

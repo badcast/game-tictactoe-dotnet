@@ -1,0 +1,9 @@
+<design>	
+	<source src="game\Cell.png"/>
+	<rects>
+		
+	</rects>
+	<TripleButtons>
+		<triple key="cellButton" rect="0, 0, 50, 50" direction="right"/>
+	</TripleButtons>
+</design>

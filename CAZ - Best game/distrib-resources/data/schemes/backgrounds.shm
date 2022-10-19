@@ -1,0 +1,10 @@
+<backgrounds>
+	<!--from data/bitmaps-->
+	<background name="mainmenu_background" filename="backgrounds\mainmenu_background.png"/>
+	<background name="background01" filename="backgrounds\background01.png"/>
+	<background name="aboutbackground" filename="backgrounds\aboutbackground.png"/>
+	<background name="logicBackground" filename="backgrounds\logic.png"/>
+	<background name="backgroundStars" filename="backgrounds\background_stars.png"/>
+	<!--game logo-->
+	<background name="gameLogo" filename="game_logo.png"/>
+</backgrounds>

@@ -1,0 +1,8 @@
+<!--Элемент управления прогресс-->
+<design>
+	<source src="load.png"/>
+	<rects>
+		<progressBackground rect="0, 0, 200, 30"/>
+		<progressOver rect="0, 30, 200, 30"/>
+	</rects>
+</design>

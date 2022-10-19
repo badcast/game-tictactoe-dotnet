@@ -1,0 +1,10 @@
+<design>
+    <!--From data\bitmaps-->
+	<source src="window_frame.png"/>
+	<!--**/\** MENU_INTERFACE **/\**-->
+	<rects>
+		<frame_angular_pict rect="0, 0, 150, 150"/>
+		<frame_horizontal_pict rect="150, 0, 30, 59"/>
+		<frame_vertical_pict rect="150, 59, 59, 30"/>
+	</rects>
+</design>

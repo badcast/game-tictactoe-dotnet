@@ -1,0 +1,16 @@
+﻿<UserControl x:Class="CAZ.LevelButton"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:CAZ"
+             mc:Ignorable="d" 
+             MaxHeight="75" 
+             MinWidth="200" VerticalAlignment="Top" HorizontalAlignment="Stretch"  Height="75">
+    <Grid>
+        <Border x:Name="icon" HorizontalAlignment="Left" Width="50" VerticalAlignment="Center" Margin="15">
+            <Label x:Name="_level" Foreground="White" FontSize="20" HorizontalContentAlignment="Center" Margin="0,0,0,10">1</Label>
+        </Border>
+        <Label x:Name="levelString" Foreground="Black" FontSize="20" HorizontalContentAlignment="Left" Margin="70,15,0,15">Level 1</Label>
+    </Grid>
+</UserControl>

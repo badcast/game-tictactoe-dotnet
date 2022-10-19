@@ -1,0 +1,61 @@
+﻿<UserControl x:Class="CAZ.GameScreen"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:CAZ"
+             mc:Ignorable="d" 
+             Height="768" Width="1024">
+    <Border>
+        <Grid Background="Black">
+            <Grid x:Name="gameTable" Opacity="1">
+                <Border>
+                    <Grid x:Name="throadParent">
+
+                    </Grid>
+                </Border>
+                <Border x:Name="_gridElements" Margin="250,134,0,0" Width="506" Height="506" BorderBrush="{DynamicResource {x:Static SystemColors.InfoTextBrushKey}}"  BorderThickness="0" CornerRadius="10" VerticalAlignment="Top" HorizontalAlignment="Left">
+                    <Grid>
+                        <local:GridManager x:Name="ggPanel" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Height="300" Width="300"/>
+                    </Grid>
+                </Border>
+                <local:ProgressBarStyle x:Name="progressBotBar" HorizontalAlignment="Center" Height="400" VerticalAlignment="Center" Width="400" IsIndeterminate="True" Background="#00232323" BorderBrush="{x:Null}" />
+            </Grid>
+            <Grid Margin="10,10,0,0" Width="60" Height="90" VerticalAlignment="Top" HorizontalAlignment="Left">
+                <Image x:Name="_clockImage" Width="60" Height="60" Margin="0,0,0,30"  />
+                <Label x:Name="timer" Background="#7F000000" HorizontalContentAlignment="Center" Foreground="White" FontSize="15" Margin="0,60,0,0" Content="00:00"/>
+            </Grid>
+            <Label x:Name="stepType" Foreground="White" FontSize="15" Margin="407,10,366,0" Content="Ход: Бота" Background="#FF232323" Height="32" VerticalAlignment="Top"/>
+            <local:TripleButton x:Name="b_resetGame" Content="Обновить" Margin="663,10,211,0" Click="b_resetGame_Click" Height="32" VerticalAlignment="Top"/>
+            <local:TripleButton x:Name="b_returnMainMenu" Content="Выход в главное меню" Margin="818,10,20,0" Click="bReturnMainMenu_Click" Height="32" VerticalAlignment="Top"/>
+            <Border CornerRadius="200,200,0,0" x:Name="windowWinresult" Margin="211,133">
+                <Border.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF02000A" Offset="0"/>
+                        <GradientStop Color="#FF0D0374" Offset="1"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+                <Grid>
+                    <Label x:Name="wintext" Margin="110,240,110,213" Foreground="White" FontSize="25" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">Hello world</Label>
+                    <Image x:Name="star1" Width="50" Height="50" Margin="180,377,372,75" Source="/game;component/Resources/Null.png"/>
+                    <Image x:Name="star2" Width="50" Height="50" Margin="372,377,180,75" Source="/game;component/Resources/Null.png"/>
+                    <Image x:Name="star3" Margin="234,294,233,75" Source="/game;component/Resources/Null.png"/>
+
+                    <local:TripleButton x:Name="bTryAgain" FontSize="20" Tag="menuButton" Margin="180,432,180,10" Content="Попробуйте снова" />
+                    <local:TripleButton x:Name="bFinish" FontSize="20" Tag="menuButton" Margin="12,432,427,10" Content="Финишь" />
+                    <local:TripleButton x:Name="bNext" FontSize="20" Tag="menuButton" Margin="427,432,12,10" Content="След. уровень" />
+                </Grid>
+            </Border>
+
+            <local:DraftLine x:Name="draftLine" Margin="10,708,0,0" Width="500" Height="50" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            <Border x:Name="_menu" Width="500" Background="Black" BorderBrush="{StaticResource b_def_MainColor}" BorderThickness="5" Margin="100,0" d:IsHidden="True">
+                <Grid>
+                    <local:TripleButton x:Name="bContinue" Tag="menuButton" Width="200" Height="50" Margin="150.639,103.458,139.36,216.542" Click="bContinue_Click">Продолждить</local:TripleButton>
+                    <local:TripleButton x:Name="bRestart" Tag="menuButton" Width="200" Height="50" Margin="150.639,153.458,139.36,166.542" Click="bRestart_Click">Заново</local:TripleButton>
+                    <local:TripleButton x:Name="bReturnMainMenu" Tag="menuButton" Width="200" Height="50" Margin="150.639,203.458,139.36,116.542" Click="bReturnMainMenu_Click">Выход в главное меню</local:TripleButton>
+                </Grid>
+            </Border>
+
+        </Grid>
+    </Border>
+</UserControl>
